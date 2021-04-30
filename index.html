@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Solution</title>
+    
+<style>
+
+    * {
+    box-sizing: border-box;
+  }
+
+h1{text-align: center;}
+
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.first , .second , .third
+{
+    background-color: grey;
+    border: black solid 1px;
+    position: relative;
+}
+
+.row > div
+{
+    padding: 5px;
+}
+
+.title1 , .title2 , .title3
+{
+    border: black solid 1px;
+    width: 100px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px;
+    position: absolute;
+    right: 0px;
+}
+
+.title1{background-color: pink;}
+.title2{background-color: red; color: white;}
+.title3{background-color: yellow;}
+
+.content
+{
+    margin-top: 40px;
+    padding: 5px;
+}
+
+@media (min-width : 992px)
+{
+    .row > div
+    {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 991px)
+{
+    .row > div
+    {
+        float: left;
+        width: 50%;
+    }
+    .row > div:nth-child(3)
+    {
+        width: 100%;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <h1>Our Menu</h1>
+    <div class="row">
+
+        <div>
+        <div class="first">
+            <p class="title1">Chicken</p>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        </div>
+
+        <div>
+        <div class="second">
+            <p class="title2">Beef</p>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        </div>
+
+        <div>
+        <div class="third">
+        <p class="title3">Sushi</p>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
